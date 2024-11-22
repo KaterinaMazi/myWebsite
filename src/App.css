@@ -1,0 +1,51 @@
+/* Global styles για το σώμα */
+* {
+  margin: 0; /* Αφαιρεί το περιθώριο από όλα τα στοιχεία */
+  padding: 0; /* Αφαιρεί την εσωτερική απόσταση (padding) από όλα τα στοιχεία */
+  box-sizing: border-box; /* Εξασφαλίζει ότι padding και border συμπεριλαμβάνονται στο συνολικό μέγεθος */
+}
+
+body {
+  font-family: 'Roboto'; /* Ορίζει τη γραμματοσειρά του σώματος */
+  color: #e0e0e0; /* Ανοιχτό γκρι κείμενο */
+  position: relative; /* Χρειάζεται για το βίντεο φόντου */
+  overflow-x: hidden; /* Αποτρέπει την οριζόντια κύλιση */
+}
+
+h3 {
+  color: #fafafa;
+}
+/* Κεντρικό Container */
+.app-container-app {
+  display: flex; /* Χρησιμοποιεί το Flexbox για τη διάταξη */
+  flex-direction: column; /* Στοιχεία σε στήλες */
+  align-items: center; /* Ευθυγράμμιση στο κέντρο */
+  min-height: 100vh; /* Υποχρεωτικό ύψος πλήρους οθόνης */
+  overflow: hidden; /* Αποτρέπει οποιοδήποτε περιεχόμενο να ξεπεράσει τα όρια του container */
+  position: relative; /* Ορίζει ότι το container είναι σε σχετική θέση */
+}
+
+.project-link-app {
+  color: #f734f7; /* Χρώμα φούξια για τους συνδέσμους */
+}
+
+/* Video background */
+.video-background-app {
+  position: absolute; /* Απόλυτη θέση για να καλύπτει όλη την οθόνη */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Καλύπτει το σύνολο του χώρου χωρίς παραμόρφωση */
+  z-index: -1; /* Τοποθετεί το βίντεο πίσω από τα υπόλοιπα στοιχεία */
+}
+
+@media (max-width: 768px) {
+  .app-container-app {
+    padding: 1rem; /* Μειωμένο padding σε μικρές οθόνες */
+  }
+
+  .video-background-app {
+    object-position: center; /* Τοποθετεί το βίντεο στο κέντρο σε μικρές οθόνες */
+  }
+}

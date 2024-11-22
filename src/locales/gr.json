@@ -1,0 +1,69 @@
+{   
+    "_comment_home": "Home",
+    "intro": "Γεια σας, το όνομά μου είναι", 
+    "name": "Κατερίνα Μάζη",
+    "role": "Είμαι Πιστοποιημένη Full-Stack Software Engineer από",
+    "aboutMeButton": "Σχετικά με Εμένα",
+
+
+    "_comment_aboutme": "AboutMe",
+    "aboutTitle": "Σχετικά με Εμένα",
+    "aboutParagraph": "Είμαι επαγγελματίας στον τομέα της ανάπτυξης λογισμικού, με ενδιαφέρον για τις νέες τεχνολογίες και επικέντρωση στη συνεχή βελτίωση των δεξιοτήτων μου. Έχω βασικές γνώσεις σε JavaScript, Python, HTML, CSS και στοχεύω να εξελιχθώ μέσα σε ένα δυναμικό περιβάλλον. Στόχος μου είναι να συμβάλλω αποτελεσματικά σε κάθε έργο, αξιοποιώντας τόσο την τεχνική μου κατάρτιση όσο και τη δέσμευσή μου στη μάθηση.",
+    "cvButton": "Προβολή Βιογραφικού",
+
+
+    "_comment_menu": "Menu",
+    "menuHome": "Αρχική",
+    "menuTechnicalStack": "Τεχνικό Υπόβαθρο",
+    "menuProjects": "Έργα",
+    "menuSkills": "Δεξιότητες",
+
+
+    "_comment_technicalstack": "TechnicalStack",
+    "backendTitle": "Backend",
+    "backendDescription": "Η Python επιλέγεται για την ευκολία και την ισχύ της στην ανάπτυξη εφαρμογών server-side, προσφέροντας γρήγορη ανάπτυξη και ευχέρεια στην εργασία με δεδομένα και APIs. Το Django παρέχει ένα ολοκληρωμένο πλαίσιο για ασφαλή και ταχεία ανάπτυξη, ενώ το MySQL χρησιμοποιείται για αξιόπιστη αποθήκευση δεδομένων, επιτρέποντας τη διαχείριση μεγάλων δεδομένων και γρήγορες αναζητήσεις.",
+    "frontendTitle": "Frontend",
+    "frontendDescription": "Η JavaScript και το React χρησιμοποιούνται για τη δημιουργία δυναμικών και διαδραστικών frontend εφαρμογών. Το React επιτρέπει αποδοτική ανάπτυξη μέσω της αρχιτεκτονικής των components, ενώ η JavaScript παρέχει τη λειτουργικότητα και την αλληλεπίδραση που απαιτεί η σελίδα. Τα HTML και CSS είναι απαραίτητα για τη δομή και το styling των ιστοσελίδων, εξασφαλίζοντας καθαρό και συντηρήσιμο κώδικα.",
+    "toolsTitle": "Tools",
+    "toolsDescription": "Το Git χρησιμοποιείται για αποδοτικό έλεγχο εκδόσεων και την παρακολούθηση των αλλαγών στον κώδικα, διευκολύνοντας τη συνεργασία και τη διαχείριση των έργων. Το GitHub βοηθά στην εύκολη κοινή χρήση του κώδικα και στην αποτελεσματική συνεργασία με άλλους προγραμματιστές, επιταχύνοντας τη διαδικασία ανάπτυξης μέσω της online διαχείρισης έργων και της ανταλλαγής κώδικα.",
+
+
+    "_comment_Skills": "Skills",
+    "technicalSkillsTitle": "Technical Skills",
+    "languages": "Γλώσσες Προγραμματισμού",
+    "languagesDescription": "JavaScript, Python, HTML, CSS, SQL",
+    "frameworks": "Frameworks/Βιβλιοθήκες",
+    "frameworksDescription": "React (για ανάπτυξη frontend), Django (για ανάπτυξη backend)",
+    "databases": "Βάσεις Δεδομένων",
+    "databasesDescription": "Εξοικείωση με MySQL και SQLite για διαχείριση σχεσιακών βάσεων δεδομένων",
+    "tools": "Εργαλεία",
+    "toolsDesc": "Εμπειρία με Git και GitHub για έλεγχο εκδόσεων και το VS Code για ανάπτυξη",
+    "other": "Άλλα",
+    "otherDescription": "Δεξιότητες σχεδίασης και χρήσης RESTful APIs για αποδοτική επικοινωνία client-server",
+  
+    "softSkillsTitle": "Soft Skills",
+    "problemSolving": "Επίλυση Προβλημάτων",
+    "problemSolvingDescription": "Αναλυτική σκέψη για επίλυση τεχνικών ζητημάτων.",
+    "communication": "Επικοινωνία",
+    "communicationDescription": "Καθαρή επικοινωνία και απόδοση τεχνικών πληροφοριών με κατανοητό τρόπο.",
+    "teamCollaboration": "Συνεργασία στην Ομάδα",
+    "teamCollaborationDescription": "Δυνατότητα συνεργασίας για την επίτευξη κοινών στόχων.",
+    "adaptability": "Προσαρμοστικότητα",
+    "adaptabilityDescription": "Ταχεία προσαρμογή σε νέες τεχνολογίες και μεθόδους εργασίας.",
+    "timeManagement": "Διαχείριση Χρόνου",
+    "timeManagementDescription": "Οργάνωση και προτεραιοποίηση εργασιών για τήρηση προθεσμιών.",
+    "continuousLearning": "Συνεχής Μάθηση",
+    "continuousLearningDescription": "Ενδιαφέρον για διαρκή εκπαίδευση και ανάπτυξη δεξιοτήτων.",
+
+
+    "_comment_projects": "Projects",
+    "projectsTitle": "Our Events",
+    "viewCode": "Δείτε τον Κώδικα",
+    "viewLiveSite": "Δείτε το Site",
+    "ourEventDescription": "Αυτή η πλατφόρμα είναι μια εφαρμογή ιστού που επιτρέπει στους χρήστες να δημιουργούν, να διαχειρίζονται και να συμμετέχουν σε εκδηλώσεις χρησιμοποιώντας το Django για το backend και το React για το frontend. Τα κύρια χαρακτηριστικά περιλαμβάνουν:",
+    "backendSectionTitle": "<strong>Backend (Django):</strong>",
+    "backendFeatures": "<b>Serializers:</b> Αποτελεσματική ανταλλαγή δεδομένων μεταξύ backend και frontend.<br> <b>Authentication & Permissions:</b> Ασφαλής σύνδεση χρηστών και ελεγχόμενη πρόσβαση.<br> <b>User Management:</b> Υποστήριξη για εγγραφή χρηστών, σύνδεση και επεξεργασία λογαριασμών.",
+    "frontendSectionTitle": "<strong>Frontend (React):</strong>",
+    "frontendFeatures": "<b>React Components:</b> Δυναμική, κλιμακούμενη διεπαφή χρήστη.<br> <b>Dynamic UI:</b> Αδιάλειπτες αλληλεπιδράσεις χωρίς ανανέωση της σελίδας.<br> <b>CSS & Bootstrap:</b> Ανταποκρινόμενος, μοντέρνος σχεδιασμός για όλες τις συσκευές.",
+    "adminPanelDescription": "Οι χρήστες μπορούν να δουν και να συμμετάσχουν σε εκδηλώσεις μέσω μιας διαδραστικής διεπαφής, ενώ οι διαχειριστές διαχειρίζονται τις εκδηλώσεις και τους χρήστες αποκλειστικά μέσω του Πίνακα Διαχείρισης."
+  }

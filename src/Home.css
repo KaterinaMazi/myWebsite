@@ -1,0 +1,177 @@
+/* Στυλ για το Container */
+.home-container-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem; /* Μειώσαμε το padding για να μοιάζει με το AboutMe */
+  margin: 0 2rem; /* Κεντράρει το container */
+  position: relative; /* Καθιστούμε το container σχετικό για το z-index */
+  z-index: 1; /* Ορίζουμε υψηλότερο z-index για να είναι πάνω από το menu */
+}
+
+/* Στυλ για την text-section-home */
+.text-section-home {
+  position: relative;
+  z-index: 2; /* Εξασφαλίζουμε ότι θα είναι πάνω από το μενού */
+}
+
+/* Στυλ για τον Τίτλο */
+.title-home {
+  font-size: 2.2rem;
+  font-weight: 520;
+  margin-bottom: 1rem; /* Προσθέτει κενό κάτω από τον τίτλο */
+  color: #333; /* Σιγουρευόμαστε ότι το χρώμα του τίτλου είναι ευδιάκριτο */
+}
+
+/* Στυλ για το "Hello, my name is" */
+.intro-text-home {
+  font-size: 2rem;
+  color: #bdbbbb;
+  margin-bottom: 0.5rem; /* Προσθέτει κενό κάτω από το "Hello, my name is" */
+}
+
+/* Στυλ για το "Katerina Mazi" */
+.name-text-home {
+  font-size: 3rem;
+  color: #f734f7;
+  margin-bottom: 1rem; /* Προσθέτει κενό κάτω από το όνομα */
+}
+
+/* Στυλ για το κείμενο της Πληροφορίας */
+.info-text-home {
+  font-size: 1.25rem;
+  color: #bdbbbb;
+  margin-bottom: 1.5rem; /* Προσθέτει κενό κάτω από την πληροφορία */
+}
+
+/* Στυλ για το Container της Πληροφορίας */
+.info-container-home {
+  flex-direction: column; /* Ρυθμίζουμε σε στήλη για να έρθει η badge card κάτω από το κείμενο */
+  align-items: flex-start; /* Κεντράρισμα του περιεχομένου */
+  margin-top: 1.5rem;
+}
+
+/* Στυλ για το Button */
+.button-home {
+  padding: 0.6rem 1.2rem;
+  background-color: #f734f7;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2rem; /* Προσθέτει κενό κάτω από το κουμπί */
+}
+
+.button-home:hover {
+  background-color: #720b78;
+}
+
+/* Στυλ για την Εικόνα */
+.image-home {
+  border-radius: 10%;
+  width: 45%;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.8)); /* Σκιά μόνο στον άνθρωπο */
+  margin-left: 5rem; /* Προσθέτει κενό αριστερά από την εικόνα */
+  margin-top: 2rem; /* Προσθέτει κενό πάνω από την εικόνα */
+  margin-bottom: 2rem; /* Προσθέτει κενό κάτω από την εικόνα */
+}
+
+.image-section-home {
+  display: flex;
+  justify-content: center;
+}
+
+/* Στυλ για το Badge Link και Εικόνα */
+.badge-link-home {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.certification-image-home {
+  width: 200px; /* Ίδιο πλάτος με το αρχικό iframe */
+  height: auto; /* Αυτόματο ύψος για να παραμένει αναλογικό */
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 1rem; /* Προσθέτει κενό πάνω από το badge */
+}
+
+/* Responsive styles for smaller screens (max-width: 769px) */
+@media (max-width: 769px) {
+  .home-container-home {
+    flex-direction: column; /* Στοιχεία τοποθετούνται κάθετα */
+    align-items: center; /* Ευθυγράμμιση στο κέντρο */
+    padding: 1.5rem;
+    gap: 1.5rem; /* Κενό μεταξύ των στοιχείων */
+    margin: 0; /* Αφαιρούμε περιθώρια */
+  }
+
+  /* Κέντρο όλων των κειμένων */
+  .text-section-home {
+    text-align: center; /* Ευθυγράμμιση στο κέντρο */
+    margin: 0;
+  }
+
+  /* Ευθυγράμμιση και προσαρμογή του κουμπιού */
+  .button-home {
+    font-size: 1rem;
+    padding: 0.5rem 1rem; /* Μικρότερο padding */
+    margin: 1rem auto; /* Κεντράρισμα κουμπιού */
+    display: block; /* Παραμένει block */
+    width: auto; /* Αφαιρούμε το μεγάλο πλάτος */
+    max-width: 200px; /* Ορίζουμε μέγιστο πλάτος για να μην είναι υπερβολικά μεγάλο */
+    text-align: center; /* Κεντράρισμα κειμένου στο κουμπί */
+  }
+
+  /* Ευθυγράμμιση και προσαρμογή της εικόνας πιστοποίησης */
+  .certification-image-home {
+    width: 150px; /* Μειωμένο μέγεθος */
+    margin: 1rem auto; /* Κεντράρισμα εικόνας πιστοποίησης */
+    display: block; /* Βεβαιώνουμε ότι παραμένει block */
+  }
+
+  /* Ευθυγράμμιση τίτλων και εικόνας */
+  .title-home, 
+  .intro-text-home, 
+  .name-text-home, 
+  .info-text-home {
+    text-align: center;
+  }
+
+  /* Ευθυγράμμιση και μείωση μεγέθους της εικόνας */
+  .image-home {
+    width: 50%; /* Μείωση του πλάτους της εικόνας */
+    margin: 0 auto; /* Κεντράρισμα */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Responsive styles for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .home-container-home {
+    padding: 1rem; /* Μειωμένο padding για μικρότερες οθόνες */
+    gap: 1rem; /* Μειωμένο κενό */
+  }
+
+  .button-home {
+    font-size: 0.9rem; /* Μικρότερο μέγεθος */
+    padding: 0.4rem 0.8rem; /* Μειωμένο padding */
+    width: auto; /* Αφαιρούμε οποιοδήποτε συγκεκριμένο πλάτος */
+    max-width: 150px; /* Περιορίζουμε το μέγιστο πλάτος */
+    margin: 1rem auto; /* Κεντράρισμα κουμπιού */
+  }
+
+  .certification-image-home {
+    width: 120px; /* Μικρότερο μέγεθος εικόνας πιστοποίησης */
+    margin: 1rem auto; /* Κεντράρισμα */
+  }
+
+  .image-home {
+    width: 50%; /* Ακόμα μικρότερο μέγεθος */
+  }
+}

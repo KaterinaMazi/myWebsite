@@ -1,0 +1,69 @@
+{
+    "_comment_home": "Home",
+    "intro": "Hello, my name is",
+    "name": "Katerina Mazi",
+    "role": "I am a Full-Stack Software Engineer certified by",
+    "aboutMeButton": "About Me",
+
+
+    "_comment_aboutme": "AboutMe",
+    "aboutTitle": "About Me",
+    "aboutParagraph": "I am a professional in the field of software development, with an interest in new technologies and a focus on continuously improving my skills. I have foundational knowledge in JavaScript, Python, HTML, CSS, and I aim to grow within a dynamic environment. My goal is to contribute effectively to each project, utilizing both my technical expertise and my commitment to learning.",
+    "cvButton": "View CV",
+
+
+    "_comment_menu": "Menu",
+    "menuHome": "Home",
+    "menuTechnicalStack": "Technical Stack",
+    "menuProjects": "Projects",
+    "menuSkills": "Skills",
+
+
+    "_comment_technicalstack": "TechnicalStack",
+    "backendTitle": "Backend",
+    "backendDescription": "Python is chosen for its ease and power in developing server-side applications, offering quick development and flexibility when working with data and APIs. Django provides a comprehensive framework for secure and rapid development, while MySQL is used for reliable data storage, enabling the management of large datasets and fast queries.",
+    "frontendTitle": "Frontend",
+    "frontendDescription": "JavaScript and React are used to create dynamic and interactive frontend applications. React allows for efficient development through its component-based architecture, while JavaScript provides the necessary functionality and interactivity for the page. HTML and CSS are essential for the structure and styling of websites, ensuring clean and maintainable code.",
+    "toolsTitle": "Tools",
+    "toolsDescription": "Git is utilized for efficient version control and tracking changes in the code, which facilitates collaboration and project management. GitHub helps in easily sharing code and collaborating effectively with other developers, speeding up the development process through online project management and code sharing.",
+
+
+    "_comment_Skills": "Skills",
+    "technicalSkillsTitle": "Technical Skills",
+    "languages": "Languages",
+    "languagesDescription": "JavaScript, Python, HTML, CSS, SQL",
+    "frameworks": "Frameworks/Libraries",
+    "frameworksDescription": "React (for frontend development), Django (for backend development)",
+    "databases": "Databases",
+    "databasesDescription": "Proficient in MySQL and SQLite for relational database management",
+    "tools": "Tools",
+    "toolsDesc": "Experienced with Git and GitHub for version control, and VS Code for development",
+    "other": "Other",
+    "otherDescription": "Skilled in designing and working with RESTful APIs for efficient client-server communication",
+    
+    "softSkillsTitle": "Soft Skills",
+    "problemSolving": "Problem-Solving",
+    "problemSolvingDescription": "Analytical thinking to solve simple technical issues.",
+    "communication": "Communication",
+    "communicationDescription": "Clear communication and translating technical information into understandable terms.",
+    "teamCollaboration": "Team Collaboration",
+    "teamCollaborationDescription": "Ability to work with a team to achieve common goals.",
+    "adaptability": "Adaptability",
+    "adaptabilityDescription": "Quick to adapt to new technologies and ways of working.",
+    "timeManagement": "Time Management",
+    "timeManagementDescription": "Organizing and prioritizing tasks to meet deadlines.",
+    "continuousLearning": "Continuous Learning",
+    "continuousLearningDescription": "Interest in ongoing education and skill development.",
+
+
+    "_comment_projects": "Projects",
+    "projectsTitle": "Our Events",
+    "viewCode": "View Code",
+    "viewLiveSite": "View Live Site",
+    "ourEventDescription": "This platform is a web application that allows users to create, manage, and participate in events using Django for the backend and React for the frontend. Key features include:",
+    "backendSectionTitle": "<strong>Backend (Django):</strong>",
+    "backendFeatures": "<b>Serializers:</b> Efficient data exchange between backend and frontend.<br> <b>Authentication & Permissions:</b> Secure user login and controlled access.<br> <b>User Management:</b> Support for user registration, login, and account editing.",
+    "frontendSectionTitle": "<strong>Frontend (React):</strong>",
+    "frontendFeatures": "<b>React Components:</b> Dynamic, scalable user interface.<br> <b>Dynamic UI:</b> Seamless interactions without page reloads.<br> <b>CSS & Bootstrap:</b> Responsive, modern design for all devices.",
+    "adminPanelDescription": "Users can view and join events through an interactive interface, while administrators manage events and users exclusively via the Admin Panel."
+}

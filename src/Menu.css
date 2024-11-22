@@ -1,0 +1,168 @@
+/* Στυλ για το μενού */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 1rem 1rem;
+  background-color: #565657;
+}
+
+.nav-list-menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-link-menu {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-link-menu:hover {
+  color: #f734f7;
+}
+
+/* Επιλογή γλώσσας */
+.language-switcher-menu {
+  order: 1;
+  padding: auto;
+}
+
+.language-switcher-menu button {
+  background-color: #403e3e;
+  color: white;
+  padding: 5px 8px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.language-switcher-menu button:hover {
+  background-color: #f734f7;
+}
+
+/* Στυλ για τα social icons */
+.social-icons-menu {
+  color: #fff;
+  display: flex;
+  gap: 1rem;
+  order: 2;
+}
+
+.social-link-menu {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-link-menu:hover {
+  color: #f734f7;
+}
+
+/* Responsive Design για οθόνες 769px - 1280px */
+@media (min-width: 769px) and (max-width: 1280px) {
+  .nav-menu {
+    flex-direction: row;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    width: 100%;  /* Βεβαιωνόμαστε ότι το μενού εκτείνεται σε όλο το πλάτος */
+  }
+
+  .nav-list-menu {
+    flex-direction: row;
+    gap: 1rem; /* Αφήνουμε το ίδιο gap για τις συνδέσεις */
+  }
+
+  /* Επιλογή γλώσσας */
+  .language-switcher-menu {
+    order: 1;  /* Διόρθωση για να παραμείνει πρώτη */
+    flex-grow: 1; /* Επιτρέπει στην επιλογή γλώσσας να προσαρμοστεί στο διαθέσιμο χώρο */
+    margin-left: 10px;  /* Αποφεύγουμε πολύ μεγάλο περιθώριο που προκαλεί αναδίπλωση */
+    padding: 0;
+    justify-content: flex-end; /* Ευθυγραμμίζουμε την επιλογή γλώσσας προς τα δεξιά */
+  }
+
+  .language-switcher-menu button {
+    margin-left: 10px;
+  }
+
+  /* Social icons */
+  .social-icons-menu {
+    order: 2;  /* Τα social icons παραμένουν δεύτερα */
+    gap: 1rem;
+    margin-top: 0;
+    justify-content: flex-end; /* Ευθυγραμμίζουμε τα social icons προς τα δεξιά */
+  }
+
+  .social-link-menu {
+    font-size: 1.2rem; /* Μικρή αύξηση του μεγέθους των social icons */
+  }
+}
+
+/* Responsive Design για μικρές οθόνες (π.χ. κινητά) */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-list-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .language-switcher-menu {
+    order: 1; /* Βεβαιωνόμαστε ότι η επιλογή γλώσσας έρχεται πρώτα */
+    margin-left: 0;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .social-icons-menu {
+    order: 2; /* Τα social icons έρχονται μετά την επιλογή γλώσσας */
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Για μικρότερες οθόνες (π.χ. κινητά) */
+  @media (max-width: 480px) {
+    .nav-menu {
+      padding: 1rem; /* Μειώσαμε το padding για καλύτερη προσαρμογή */
+    }
+
+    .nav-list-menu {
+      gap: 1rem;
+      padding-left: 0;
+    }
+
+    .nav-link-menu {
+      font-size: 1rem; /* Μειώσαμε το μέγεθος της γραμματοσειράς για καλύτερη ευχρηστία */
+    }
+
+    .language-switcher-menu {
+      order: 1; /* Βεβαιωνόμαστε ότι η επιλογή γλώσσας έρχεται πρώτα */
+      margin-left: 0;
+      padding: 0;
+      justify-content: center;
+    }
+
+    .social-icons-menu {
+      gap: 1rem;
+      margin-top: 1rem;
+      order: 2; /* Τα social icons έρχονται μετά την επιλογή γλώσσας */
+      width: 100%;
+      justify-content: center;
+    }
+
+    .social-link-menu {
+      font-size: 1.2rem; /* Μικρή αύξηση του μεγέθους των social icons */
+    }
+  }
+}

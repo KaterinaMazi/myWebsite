@@ -1,0 +1,79 @@
+/* Γενικό Container */
+.container-skills {
+  text-align: center; /* Κεντρική ευθυγράμμιση του κειμένου */
+  padding: 2rem;
+}
+
+/* Στυλ για κάθε Section */
+.section-skills {
+  margin-bottom: 40px;
+}
+
+/* Τίτλος για την κάθε Section */
+.section-title-skills {
+  font-size: 1.8em;
+  color: #f734f7; /* Το χρώμα του τίτλου */
+  margin-bottom: 30px;
+}
+
+/* Containers για τα Cards */
+.cards-container-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Στυλ για κάθε Card */
+.card-skills {
+  background-color: #858585;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Στυλ για τα Εικονίδια - Χρώμα αφαιρέθηκε γιατί εφαρμόζεται στο component */
+.icon-skills {
+  font-size: 40px; /* Μπορεί να διατηρηθεί, αν θέλουμε να αλλάξουμε το μέγεθος */
+  margin-bottom: 10px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  /* Προσαρμογή για μικρές οθόνες */
+  .section-title-skills {
+    font-size: 1.5em; /* Μειώσαμε το μέγεθος του τίτλου */
+  }
+
+  .cards-container-skills {
+    flex-direction: column; /* Τα cards τοποθετούνται κάθετα */
+    gap: 10px; /* Μειώσαμε το κενό μεταξύ των cards */
+  }
+
+  .card-skills {
+    width: 90%; /* Αυξήσαμε το πλάτος για να χωράει καλύτερα στις μικρές οθόνες */
+    padding: 15px; /* Μειώσαμε το padding */
+  }
+
+  .icon-skills {
+    font-size: 30px; /* Μειώσαμε το μέγεθος του εικονιδίου */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ειδικά για πολύ μικρές οθόνες (π.χ. κινητά) */
+  .section-title-skills {
+    font-size: 1.3em; /* Ακόμα μικρότερο μέγεθος γραμματοσειράς για μικρότερες συσκευές */
+  }
+
+  .card-skills {
+    width: 100%; /* Τα cards καταλαμβάνουν όλο το πλάτος της οθόνης */
+    padding: 10px; /* Μειωμένο padding για ακόμα πιο compact εμφάνιση */
+  }
+
+  .icon-skills {
+    font-size: 25px; /* Μειωμένο μέγεθος για τα εικονίδια */
+  }
+}
