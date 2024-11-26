@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-import { AppBar, Box, Button, IconButton, Toolbar, Typography, Drawer, List, ListItem, ListItemButton, ListItemText, useMediaQuery } from '@mui/material';
+import { AppBar, Box, Button, IconButton, Toolbar, Typography, Drawer, List, ListItem, ListItemButton, ListItemText, useMediaQuery, Divider } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -100,16 +100,16 @@ function Menu() {
 
       {/* AppBar for Mobile */}
       {isMobile && (
-        <AppBar position="sticky" sx={{ backgroundColor: '#282c34', boxShadow: 'none' }}>
+        <AppBar position="sticky" sx={{ backgroundColor: '#282c34', boxShadow: 'none', padding: "1rem" }}>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             {/* Current Path */}
-            <Typography variant="h5" sx={{ color: '#fff' }}>
+            <Typography variant="h4" sx={{ color: '#fff' }}>
               {menuItems.find((item) => item.path === location.pathname)?.label || t('Μenu')}
             </Typography>
 
             {/* Mobile Menu Icon */}
             <IconButton onClick={toggleDrawer(true)} sx={{ color: '#fff' }}>
-              <MenuIcon fontSize='large'/>
+               <MenuIcon sx={{fontSize: "3rem"}}/>
             </IconButton>
           </Toolbar>
         </AppBar>
@@ -124,7 +124,7 @@ function Menu() {
           sx: {
             backgroundColor: '#282c34',
             color: '#fff',
-            width: '250px',
+            width: '40%',
             height: '100%',
             padding: '1rem',
           },
@@ -132,22 +132,22 @@ function Menu() {
       >
         <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
           <IconButton onClick={toggleDrawer(false)} sx={{ color: '#fff', alignSelf: 'flex-end' }}>
-            <CloseIcon fontSize='large'/>
+              <CloseIcon sx={{fontSize: "3rem"}}/>
           </IconButton>
 
           {/* Menu Items */}
           <List>
             {menuItems.map((item) => (
-              <ListItem key={item.path} disablePadding>
+              <ListItem sx={{margin: "1rem"}} key={item.path} disablePadding>
                 <ListItemButton component={Link} to={item.path} onClick={toggleDrawer(false)}>
-                  <Typography variant='h5' sx={{'&:hover': { color: '#f734f7' } }}>{item.label}</Typography>
+                  <Typography variant='h4' sx={{'&:hover': { color: '#f734f7' } }}>{item.label}</Typography>
                 </ListItemButton>
               </ListItem>
             ))}
           </List>
-
+          <Divider component={'div'} sx={{borderColor: 'rgba(255, 255, 255, 0.6)'}}/>
           {/* Language Selection */}
-          <Box sx={{ display: 'flex', gap: '10px', marginTop: '1rem' }}>
+          <Box sx={{ display: 'flex', gap: '2rem', margin: '2rem 1rem' }}>
             {['EN', 'GR'].map((lang) => (
               <Button
                 key={lang}
@@ -162,13 +162,15 @@ function Menu() {
                   },
                 }}
               >
-                <Typography variant='h5'>{lang}</Typography>
+                <Typography variant='h4'>{lang}</Typography>
               </Button>
             ))}
           </Box>
+          
+          <Divider component={'div'} sx={{borderColor: 'rgba(255, 255, 255, 0.6)'}}/>
 
           {/* Social Icons */}
-          <Box sx={{ display: 'flex', justifyContent: 'flex-start', gap: '1rem', marginTop: '2rem' }}>
+          <Box sx={{ display: 'flex', justifyContent: 'flex-start', gap: '2rem', margin: '2rem 1rem' }}>
             {[{
               href: 'https://www.linkedin.com/in/katerina-mazi/', icon: <FaLinkedin size="1.5em" />
             }, {
@@ -186,7 +188,7 @@ function Menu() {
                     },
                   }}
                 >
-                  <Typography variant='h5'>{item.icon}</Typography>
+                  <Typography variant='h4'>{item.icon}</Typography>
                 </Box>
               </a>
             ))}
