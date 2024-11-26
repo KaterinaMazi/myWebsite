@@ -103,13 +103,13 @@ function Menu() {
         <AppBar position="sticky" sx={{ backgroundColor: '#282c34', boxShadow: 'none' }}>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             {/* Current Path */}
-            <Typography variant="h6" sx={{ color: '#fff', fontSize: '1.2rem' }}>
+            <Typography variant="h5" sx={{ color: '#fff' }}>
               {menuItems.find((item) => item.path === location.pathname)?.label || t('Μenu')}
             </Typography>
 
             {/* Mobile Menu Icon */}
             <IconButton onClick={toggleDrawer(true)} sx={{ color: '#fff' }}>
-              <MenuIcon />
+              <MenuIcon fontSize='large'/>
             </IconButton>
           </Toolbar>
         </AppBar>
@@ -132,7 +132,7 @@ function Menu() {
       >
         <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
           <IconButton onClick={toggleDrawer(false)} sx={{ color: '#fff', alignSelf: 'flex-end' }}>
-            <CloseIcon />
+            <CloseIcon fontSize='large'/>
           </IconButton>
 
           {/* Menu Items */}
@@ -140,7 +140,7 @@ function Menu() {
             {menuItems.map((item) => (
               <ListItem key={item.path} disablePadding>
                 <ListItemButton component={Link} to={item.path} onClick={toggleDrawer(false)}>
-                  <ListItemText primary={item.label} sx={{ fontSize: '1rem', '& .MuiListItemText-primary': {'&:active': { color: '#f734f7' } }}} />
+                  <Typography variant='h5' sx={{'&:hover': { color: '#f734f7' } }}>{item.label}</Typography>
                 </ListItemButton>
               </ListItem>
             ))}
@@ -155,7 +155,6 @@ function Menu() {
                 sx={{
                   backgroundColor: '#403e3e',
                   color: 'white',
-                  fontSize: '0.9rem',
                   textTransform: 'uppercase',
                   '&:hover': {
                     backgroundColor: '#f734f7',
@@ -163,7 +162,7 @@ function Menu() {
                   },
                 }}
               >
-                {lang}
+                <Typography variant='h5'>{lang}</Typography>
               </Button>
             ))}
           </Box>
@@ -187,7 +186,7 @@ function Menu() {
                     },
                   }}
                 >
-                  {item.icon}
+                  <Typography variant='h5'>{item.icon}</Typography>
                 </Box>
               </a>
             ))}
