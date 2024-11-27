@@ -20,6 +20,7 @@ function Home() {
         marginTop: { xs: '2rem', md: "2rem", lg: "0" },
         zIndex: 1,
       }}
+      
     >
       {/* Text and Button Section */}
       <motion.div
@@ -36,7 +37,7 @@ function Home() {
           marginBlockEnd: "8rem"
         }}
       >
-        <motion.h1
+        <motion.div
           initial={{ x: -100 }}
           animate={{ x: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
@@ -67,7 +68,7 @@ function Home() {
           >
             {t("name")}
           </span>
-        </motion.h1>
+        </motion.div>
 
         <Box
           sx={{
@@ -162,7 +163,6 @@ function Home() {
           alt="Katerina Mazi"
           style={{
             borderRadius: "10%",
-            width: "100%", // Μεγαλύτερη εικόνα στις μικρές οθόνες
             maxWidth: "300px",
             filter: "drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.8))",
           }}

@@ -9,7 +9,7 @@ function Projects() {
     <Box sx={{ padding: '3rem', textAlign: 'center' }}>
       <Box sx={{ marginBottom: '50px' }}>
         <Typography
-          variant="h3"
+          variant="h2"
           sx={{
             color: '#f734f7',
             marginBottom: '30px',

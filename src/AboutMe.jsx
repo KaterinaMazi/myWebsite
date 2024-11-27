@@ -12,7 +12,7 @@ function AboutMe() {
         flexDirection: { xs: "column", md: "row" }, // Column for mobile, row for larger screens
         justifyContent: "space-between",
         alignItems: "center",
-        padding: { xs: "2rem 1rem", md: "3rem" }, // Adjust padding for mobile
+        padding: { xs: "2rem 1rem"}, // Adjust padding for mobile
         background: "linear-gradient(135deg, #3e434f, #5b585c)",
         color: "#e5e7eb",
         boxShadow: "0px 6px 25px rgba(0, 0, 0, 0.5)",
@@ -32,21 +32,20 @@ function AboutMe() {
         <Typography
           variant="h2"
           sx={{
-            fontSize: { xs: "1.8rem", md: "2.4rem" }, // Smaller font size for mobile
             color: "#f734f7",
             fontWeight: "bold",
             textShadow: "2px 2px 5px rgba(0, 0, 0, 0.5)",
+            margin: "2rem",
             textAlign: { xs: "center", md: "left" }, // Center text on mobile
           }}
         >
           {t("aboutTitle")}
         </Typography>
         <Typography
+          variant="p"
           sx={{
-            fontSize: { xs: "1rem", md: "1.2rem" },
             lineHeight: 1.8,
             color: "#d1d5db",
-            marginBottom: "2rem",
             textAlign: { xs: "center", md: "left" }, // Center text on mobile
           }}
         >
@@ -58,7 +57,7 @@ function AboutMe() {
           }}
         >
           <Button
-            component="a"
+            variant="a"
             href="/KaterinaMazi_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -66,7 +65,7 @@ function AboutMe() {
               backgroundColor: "#f734f7",
               color: "#ffffff",
               padding: "0.6rem 1.8rem",
-              fontSize: "1.1rem",
+              margin: "2rem",
               borderRadius: "12px",
               textDecoration: "none",
               transition: "all 0.3s ease",
@@ -86,9 +85,8 @@ function AboutMe() {
       {/* Image Section */}
       <Box
         sx={{
-          maxWidth: { xs: "100%", md: "35%" }, // Full width on mobile
+          maxWidth: { xs: "100%", md: "40%", lg:"30%" }, // Full width on mobile
           textAlign: "center",
-          marginTop: { xs: "2rem", md: "0" }, // Add space above image on mobile
         }}
       >
         <img

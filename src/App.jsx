@@ -17,9 +17,61 @@ const theme = createTheme({
     },
     h3: {
       color: '#fafafa',
+      fontSize: '1rem', // Default size
+            '@media (min-width:960px) and (max-width:1200px)': {
+              fontSize: '2rem', // Font size for tablets or smaller laptops (md/lg)
+            },
+            '@media (min-width:1200px)': {
+              fontSize: '1rem', // Font size for laptops/desktops (lg/xl)
+            },
+    },
+    h2: {
+      fontSize: '1rem', // Default size
+            '@media (max-width:960px)': {
+              fontSize: '2rem', // Font size for laptops/desktops (lg/xl)
+            },
+            '@media (min-width:960px) and (max-width:1200px)': {
+              fontSize: '3rem', // Font size for tablets or smaller laptops (md/lg)
+            },
+            '@media (min-width:1200px)': {
+              fontSize: '2rem', // Font size for laptops/desktops (lg/xl)
+            },
+    },  
+    p: {
+      fontSize: '1rem', // Default size
+            '@media (min-width:960px) and (max-width:1200px)': {
+              fontSize: '1.6rem', // Font size for tablets or smaller laptops (md/lg)
+            },
+            '@media (min-width:1200px)': {
+              fontSize: '1.1rem', // Font size for laptops/desktops (lg/xl)
+            },
+    }, 
+  },  
+  components: {
+    MuiButton: {
+      variants: [
+        {
+          props: { variant: 'a' },
+          style: {
+            fontSize: '1rem', // Default size
+            '@media (max-width:960px)': {
+              fontSize: '0.8rem', // Font size for laptops/desktops (lg/xl)
+            },
+            '@media (min-width:960px) and (max-width:1200px)': {
+              fontSize: '1.6rem', // Font size for tablets or smaller laptops (md/lg)
+            },
+            '@media (min-width:1200px)': {
+              fontSize: '0.8rem', // Font size for laptops/desktops (lg/xl)
+            },
+          },
+        },
+      ],
     },
   },
-});
+
+
+  },
+);
 
 function App() {
   const videoRef = useRef(null);
