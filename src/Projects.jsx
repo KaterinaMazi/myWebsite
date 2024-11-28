@@ -56,13 +56,13 @@ function Projects() {
 
                 {/* Backend Section */}
                 <Box sx={{ marginTop: '30px' }}>
-                  <Typography variant="h5" sx={{ color: '#f734f7', textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)', }} dangerouslySetInnerHTML={{ __html: t("backendSectionTitle") }} />
+                  <Typography variant="h3" sx={{ color: '#f734f7', textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)', }} dangerouslySetInnerHTML={{ __html: t("backendSectionTitle") }} />
                   <Typography variant="body2" sx={{ color: '#e0e0e0' }} dangerouslySetInnerHTML={{ __html: t("backendFeatures") }} />
                 </Box>
 
                 {/* Frontend Section */}
                 <Box sx={{ marginTop: '30px' }}>
-                  <Typography variant="h5" sx={{ color: '#f734f7', textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)', }} dangerouslySetInnerHTML={{ __html: t("frontendSectionTitle") }} />
+                  <Typography variant="h3" sx={{ color: '#f734f7', textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)', }} dangerouslySetInnerHTML={{ __html: t("frontendSectionTitle") }} />
                   <Typography variant="body2" sx={{ color: '#e0e0e0' }} dangerouslySetInnerHTML={{ __html: t("frontendFeatures") }} />
                 </Box>
 
@@ -75,6 +75,7 @@ function Projects() {
               {/* Δεξί Τμήμα: Buttons με τα Icons */}
               <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)', }}>
                 <Button
+                  variant="a"
                   href="https://github.com/KaterinaMazi/OurEvents"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -85,7 +86,7 @@ function Projects() {
                     borderRadius: '100px',
                     padding: "0.6rem 1.8rem",
                     marginBottom: '30px',
-                    boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.3)",
+                    boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.4)",
                     '&:hover': {
                       backgroundColor: '#720b78',
                     },
@@ -98,6 +99,7 @@ function Projects() {
                 </Button>
 
                 <Button
+                  variant="a"
                   href="https://our-events.site/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -106,8 +108,8 @@ function Projects() {
                     color: 'white',
                     fontWeight: 'bold',
                     borderRadius: '100px',
-                    padding: '0.5rem 1.5rem',
-                    boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.3)",
+                    padding: '0.6rem 1.8rem',
+                    boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.4)",
                     '&:hover': {
                       backgroundColor: '#720b78',
                     },

@@ -35,8 +35,7 @@ function TechnicalStack() {
         }}
       >
         <Typography
-          variant="h5"
-          component="h3"
+          variant="h2"
           sx={{
             color: '#f734f7',
             fontWeight: 'bold',
@@ -91,8 +90,7 @@ function TechnicalStack() {
         }}
       >
         <Typography
-          variant="h5"
-          component="h3"
+          variant="h2"
           sx={{
             color: '#f734f7',
             fontWeight: 'bold',
@@ -152,8 +150,7 @@ function TechnicalStack() {
         }}
       >
         <Typography
-          variant="h5"
-          component="h3"
+          variant="h2"
           sx={{
             color: '#f734f7',
             fontWeight: 'bold',

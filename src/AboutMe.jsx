@@ -18,7 +18,7 @@ function AboutMe() {
         boxShadow: "0px 6px 25px rgba(0, 0, 0, 0.5)",
         borderRadius: "15px",
         border: "2px solid rgba(247, 52, 247, 0.4)",
-        margin: "2rem auto",
+        margin: { xs: "2rem auto", md: "4rem", lg:"4rem auto" },
         maxWidth: "1200px",
       }}
     >
@@ -47,6 +47,7 @@ function AboutMe() {
             lineHeight: 1.8,
             color: "#d1d5db",
             textAlign: { xs: "center", md: "left" }, // Center text on mobile
+            textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
           }}
         >
           {t("aboutParagraph")}
@@ -64,9 +65,10 @@ function AboutMe() {
             sx={{
               backgroundColor: "#f734f7",
               color: "#ffffff",
-              padding: "0.6rem 1.8rem",
+              padding: "1rem 2rem",
+              fontWeight: "bold",
               margin: "2rem",
-              borderRadius: "12px",
+              borderRadius: "100px",
               textDecoration: "none",
               transition: "all 0.3s ease",
               boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.3)",

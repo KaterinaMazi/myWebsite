@@ -17,7 +17,7 @@ function Home() {
         height: "100vh", // Καταλαμβάνει όλο το ύψος της οθόνης
         padding: "2rem",
         gap: { xs: "2rem", md: "10rem" }, // Αποστάσεις μεταξύ των στοιχείων
-        marginTop: { xs: '2rem', md: "2rem", lg: "0" },
+        marginTop: { xs: '2rem', md: "3rem", lg: "0" },
         zIndex: 1,
       }}
       
@@ -42,8 +42,8 @@ function Home() {
           animate={{ x: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
           style={{
-            fontSize: "2.2rem",
-            fontWeight: 520,
+            fontSize: "5rem",
+            fontWeight: "bold",
             marginBottom: "1rem",
             color: "#333",
           }}
@@ -76,7 +76,7 @@ function Home() {
             flexDirection: "column",
             alignItems: "center",
             textAlign: "center",
-            gap: "1.5rem",
+            gap: "2rem",
             textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)'  
           }}
         >
@@ -85,7 +85,7 @@ function Home() {
             animate={{ x: 0 }}
             transition={{ duration: 2, ease: "easeOut" }}
             style={{
-              fontSize: "1.25rem",
+              fontSize: "1.5rem",
               color: "#bdbbbb",
             }}
           >
@@ -118,7 +118,7 @@ function Home() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 1.5 }}
           style={{
-            marginTop: "1rem",
+            marginTop: "2rem",
             display: "flex",
             justifyContent: "center",
             width: "100%",
@@ -126,13 +126,13 @@ function Home() {
         >
           <Link to="/about" style={{ textDecoration: "none" }}>
             <Button
+              variant="a"
               sx={{
-                padding: "0.5rem 1.5rem",
+                padding: "1rem 2rem",
                 backgroundColor: "#f734f7",
                 color: "#ffffff",
-                borderRadius: "10px",
-                fontSize: "1rem",
-                fontWeight: 500,
+                borderRadius: "100px",
+                fontWeight: "bold",
                 textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
                 boxShadow: "0px 6px 20px rgba(0, 0, 0, 0.3)",
                 "&:hover": {

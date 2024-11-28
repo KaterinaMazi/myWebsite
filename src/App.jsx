@@ -14,15 +14,28 @@ const theme = createTheme({
     fontFamily: 'Roboto, sans-serif',
     body1: {
       color: '#e0e0e0',
-    },
-    h3: {
-      color: '#fafafa',
       fontSize: '1rem', // Default size
+            '@media (min-width:960px) and (max-width:1200px)': {
+              fontSize: '1.4rem', // Font size for tablets or smaller laptops (md/lg)
+            },
+    },
+    body2: {
+      color: '#e0e0e0',
+      fontSize: '0.9rem', // Default size
+            '@media (min-width:960px) and (max-width:1200px)': {
+              fontSize: '1.2rem', // Font size for tablets or smaller laptops (md/lg)
+            },
+},
+    h3: {
+      fontSize: '1rem', // Default size
+      color: "#f734f7", 
+      fontWeight: "bold", 
+      textShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
             '@media (min-width:960px) and (max-width:1200px)': {
               fontSize: '2rem', // Font size for tablets or smaller laptops (md/lg)
             },
             '@media (min-width:1200px)': {
-              fontSize: '1rem', // Font size for laptops/desktops (lg/xl)
+              fontSize: '1.3rem', // Font size for laptops/desktops (lg/xl)
             },
     },
     h2: {
@@ -35,6 +48,18 @@ const theme = createTheme({
             },
             '@media (min-width:1200px)': {
               fontSize: '2rem', // Font size for laptops/desktops (lg/xl)
+            },
+    },        
+    h1: {
+      fontSize: '1rem', // Default size
+            '@media (max-width:960px)': {
+              fontSize: '2rem', // Font size for laptops/desktops (lg/xl)
+            },
+            '@media (min-width:960px) and (max-width:1200px)': {
+              fontSize: '4rem', // Font size for tablets or smaller laptops (md/lg)
+            },
+            '@media (min-width:1200px)': {
+              fontSize: '3rem', // Font size for laptops/desktops (lg/xl)
             },
     },  
     p: {
@@ -53,6 +78,7 @@ const theme = createTheme({
         {
           props: { variant: 'a' },
           style: {
+            lineHeight: "1.1",
             fontSize: '1rem', // Default size
             '@media (max-width:960px)': {
               fontSize: '0.8rem', // Font size for laptops/desktops (lg/xl)
