@@ -104,7 +104,7 @@ function Menu() {
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             {/* Current Path */}
             <Typography variant="h4" sx={{ color: '#fff' }}>
-              {menuItems.find((item) => item.path === location.pathname)?.label || t('Μenu')}
+              {menuItems.find((item) => item.path === location.pathname)?.label || t('About Me')}
             </Typography>
 
             {/* Mobile Menu Icon */}
