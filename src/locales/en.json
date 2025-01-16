@@ -65,5 +65,14 @@
     "backendFeatures": "<b>Serializers:</b> Efficient data exchange between backend and frontend.<br> <b>Authentication & Permissions:</b> Secure user login and controlled access.<br> <b>User Management:</b> Support for user registration, login, and account editing.",
     "frontendSectionTitle": "<strong>Frontend (React):</strong>",
     "frontendFeatures": "<b>React Components:</b> Dynamic, scalable user interface.<br> <b>Dynamic UI:</b> Seamless interactions without page reloads.<br> <b>CSS & Bootstrap:</b> Responsive, modern design for all devices.",
-    "adminPanelDescription": "Users can view and join events through an interactive interface, while administrators manage events and users exclusively via the Admin Panel."
+    "adminPanelDescription": "Users can view and join events through an interactive interface, while administrators manage events and users exclusively via the Admin Panel.",
+    "MorfesZoisTitle": "Morfes Zois",
+    "MorfesZoisSituationTitle": "Situation",
+    "MorfesZoisTaskTitle": "Task",
+    "MorfesZoisActionTitle": "Action",
+    "MorfesZoisResultTitle": "Result",
+    "MorfesZoisSituation": "Created a blog and online magazine platform with articles in categories such as World, Science, Recipes, Travel, etc.",
+    "MorfesZoisTask": "The goal was to develop a responsive and optimized platform using WordPress to support dynamic content.",
+    "MorfesZoisAction": "- Developed the backend using WordPress.<br>- Designed and customized custom themes and plugins for a tailored frontend.<br>- Integrated SEO and analytics tools for performance optimization and traffic monitoring.",
+    "MorfesZoisResult": "The result was a fully functional platform with an engaging UI/UX that supports dynamic content publishing and efficient content management."
 }
