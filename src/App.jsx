@@ -157,6 +157,7 @@ function App() {
             <Route path="/technicalStack" element={<TechnicalStack />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </Box>
       </Router>
